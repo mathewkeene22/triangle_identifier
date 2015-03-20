@@ -13,6 +13,9 @@ var triangles = function(one, two, three) {
     triangle = "Scalene Triangle"
   }
 
-  
+  else if ((one === two) || (two === three) || (one === three)) {
+    triangle = "Isosceles Triangle"
+  }
+    
   return triangle;
 };

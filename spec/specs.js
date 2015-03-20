@@ -10,4 +10,8 @@ describe('triangles', function() {
   it("is a scalene if all sides are different lenghts", function() {
     expect(triangles(7, 8, 9)).to.equal("Scalene Triangle")
   });
+
+  it("is an isosceles triangle if two sides are equal lenghts", function() {
+    expect(triangles(2, 2, 3)).to.equal("Isosceles Triangle")
+  });
 });
