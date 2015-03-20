@@ -6,4 +6,8 @@ describe('triangles', function() {
   it("is an equilateral triangle if all three sides are equal", function() {
     expect(triangles(7, 7, 7)).to.equal("Equilateral Triangle")
   });
+
+  it("is a scalene if all sides are different lenghts", function() {
+    expect(triangles(7, 8, 9)).to.equal("Scalene Triangle")
+  });
 });
