@@ -19,4 +19,4 @@ Open the HTML file in your web browser
 License
 -------
 
-Copyright 2015 Mathew Keene
+Copyright 2015 Mathew Keene 
