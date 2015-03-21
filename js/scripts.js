@@ -1,7 +1,12 @@
 var triangles = function(one, two, three) {
   var triangle = "";
 
-  if ((one === two) && (two === three) && (three === one)) {
+
+  if (one >= (two + three) || two >= (one + three) || three >= (one + two)) {
+    triangle = "That is not a triangle, let alone a polygon."
+  }
+
+  else if ((one === two) && (two === three) && (three === one)) {
     triangle = "Equilateral Triangle"
   }
 
@@ -9,12 +14,8 @@ var triangles = function(one, two, three) {
     triangle = "Scalene Triangle"
   }
 
-  else if ((one === two) || (two === three) || (one === three)) {
+  else if ((one === two) && (two !== three)|| (two === three) && (one !== two) || (one === three) && (two !== three)) {
     triangle = "Isosceles Triangle"
-  }
-
-  if ((one + two < three) || (two + three < one) || (one + three < one)) {
-    triangle = "That is not a triangle, let alone a polygon."
   }
 
   return triangle;
